@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_normal_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/questionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="@dimen/dimen_normal_5"
+            android:text="what is the question ?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_normal_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/answerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="@dimen/dimen_normal_5"
+            android:text="this is the answer of the question"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_normal_1"
+        android:layout_marginTop="@dimen/dimen_normal_5"
+        android:background="@color/hintGray" />
+
+</LinearLayout>

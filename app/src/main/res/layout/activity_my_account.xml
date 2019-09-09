@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Activity.MyAccountActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_20"
+                android:layout_gravity="top"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_normal_20"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_keyboard_arrow_left_30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:text="@string/my_account"
+                android:textColor="@color/customWhite"
+                android:textSize="@dimen/dimen_text_18"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="@dimen/dimen_normal_130"
+        android:layout_height="@dimen/dimen_normal_130"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_normal_30"
+        android:background="@drawable/circle_layout"
+        android:src="@drawable/profile_img"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_normal_20"
+        android:layout_marginTop="@dimen/dimen_normal_30"
+        android:layout_marginEnd="@dimen/dimen_normal_20"
+        android:background="@drawable/edittext_design_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_normal_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_normal_2"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_normal_20"
+        android:layout_marginTop="@dimen/dimen_normal_10"
+        android:layout_marginEnd="@dimen/dimen_normal_20"
+        android:background="@drawable/edittext_design_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_normal_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_normal_2"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_normal_20"
+        android:layout_marginTop="@dimen/dimen_normal_10"
+        android:layout_marginEnd="@dimen/dimen_normal_20"
+        android:background="@drawable/edittext_design_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_normal_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_normal_2"
+            android:layout_marginTop="@dimen/dimen_normal_10"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_normal_45"
+        android:layout_marginStart="@dimen/dimen_normal_20"
+        android:layout_marginTop="@dimen/dimen_normal_20"
+        android:layout_marginEnd="@dimen/dimen_normal_20"
+        android:background="@drawable/button_design"
+        android:padding="@dimen/dimen_normal_5"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textColor="@color/customWhite"
+        android:textSize="@dimen/dimen_text_16"
+        android:textStyle="bold" />
+</LinearLayout>

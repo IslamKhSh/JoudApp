@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderCardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_20"
+                android:layout_gravity="top"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_normal_20"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_keyboard_arrow_left_30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:text="@string/order_card"
+                android:textColor="@color/customWhite"
+                android:textSize="@dimen/dimen_text_18"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_normal_30"
+            android:layout_marginTop="@dimen/dimen_normal_30"
+            android:layout_marginEnd="@dimen/dimen_normal_30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/visitorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_normal_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/NameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_40"
+                    android:background="@drawable/edittext_design_white"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dimen_normal_5" />
+
+                <EditText
+                    android:id="@+id/phoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_40"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:background="@drawable/edittext_design_white"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:padding="@dimen/dimen_normal_5" />
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_40"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:background="@drawable/edittext_design_white"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dimen_normal_5" />
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_40"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:layout_marginBottom="@dimen/dimen_normal_10"
+                    android:background="@drawable/edittext_design_white"
+                    android:hint="@string/password"
+                    android:inputType="numberPassword"
+                    android:padding="@dimen/dimen_normal_5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_design_white"
+                    android:padding="@dimen/dimen_normal_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:text="@string/payment_method"
+                        android:textSize="@dimen/dimen_text_16"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end">
+
+                        <ImageView
+                            android:id="@+id/paymentArrowUpBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_keyboard_arrow_up_24dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/paymentArrowDownBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_keyboard_arrow_down_24dp" />
+                    </FrameLayout>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/checkBankTransferBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/edittext_design_white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_normal_5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_normal_5"
+                        android:text="@string/bank_transfer"
+                        android:textSize="@dimen/dimen_text_16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/checkBankTransferIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:src="@drawable/ic_check_24dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/checkCashBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/edittext_design_white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_normal_5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_normal_5"
+                        android:text="@string/cash"
+                        android:textSize="@dimen/dimen_text_16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/checkcashIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:src="@drawable/ic_check_24dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/carTypeRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardTypeRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_normal_15" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/requestBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_45"
+                android:layout_marginTop="@dimen/dimen_normal_20"
+                android:background="@drawable/button_design"
+                android:padding="@dimen/dimen_normal_5"
+                android:text="@string/request"
+                android:textAllCaps="false"
+                android:textColor="@color/customWhite"
+                android:textSize="@dimen/dimen_text_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

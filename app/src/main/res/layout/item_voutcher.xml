@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voutcherItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_normal_20"
+    android:layout_marginTop="@dimen/dimen_normal_5"
+    android:layout_marginEnd="@dimen/dimen_normal_20"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageIv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_normal_300"
+        android:scaleType="fitXY"
+        android:src="@drawable/elezaby_img" />
+
+    <TextView
+        android:id="@+id/offerTv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="#EDFFFFFF"
+        android:gravity="center"
+        android:padding="@dimen/dimen_normal_10"
+        android:text="Get 100 EGP off when making purchases with value off 500 EGP"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_text_16"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tremno.joudapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.TermAndConditionsActivity" />
+        <activity android:name=".Activity.CheckLoginActivity" />
+        <activity android:name=".Activity.VouchersCategoriesActivity" />
+        <activity android:name=".Activity.TurnOffCardActivity" />
+        <activity android:name=".Activity.TurnOffCardCodeActivity" />
+        <activity android:name=".Activity.StoresActivity" />
+        <activity android:name=".Activity.SignupActivity" />
+        <activity android:name=".Activity.MyAccountActivity" />
+        <activity android:name=".Activity.PhoneVerificationActivity" />
+        <activity android:name=".Activity.OrderCardActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ServicesActivity" />
+        <activity android:name=".Activity.VouchersActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.ChangeLanguageActivity" />
+        <activity android:name=".Activity.ForgetPasswordActivity" />
+        <activity android:name=".Activity.FAQActivity" />
+        <activity android:name=".Activity.CompanyDetailsActivity" />
+        <activity android:name=".Activity.EditAccountActivity" />
+        <activity android:name=".Activity.ContactUsActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".Activity.CardsActivity" />
+        <activity android:name=".Activity.BankTransferActivity" />
+        <activity android:name=".Activity.AddressActivity" />
+        <activity android:name=".Activity.ActivateCardActivity" />
+        <activity android:name=".Activity.ActivateCardCodeActivity" />
+        <activity android:name=".Activity.AccountActivationActivity" />
+        <activity android:name=".Activity.AboutUsActivity" />
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>

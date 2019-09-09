@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Activity.CardsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_20"
+                android:layout_gravity="top"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_normal_20"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_keyboard_arrow_left_30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:text="@string/cards"
+                android:textColor="@color/customWhite"
+                android:textSize="@dimen/dimen_text_18"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_normal_20"
+            android:layout_marginEnd="@dimen/dimen_normal_20"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/orderCardBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_40"
+                android:layout_marginTop="@dimen/dimen_normal_30"
+                android:background="@drawable/edittext_design_white"
+                android:padding="@dimen/dimen_normal_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:text="@string/order_card"
+                    android:textSize="@dimen/dimen_text_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/activateCardBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_40"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:background="@drawable/edittext_design_white"
+                android:padding="@dimen/dimen_normal_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:text="@string/activate_card"
+                    android:textSize="@dimen/dimen_text_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/turnOffCardBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_normal_40"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:background="@drawable/edittext_design_white"
+                android:padding="@dimen/dimen_normal_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:text="@string/turn_off_card"
+                    android:textSize="@dimen/dimen_text_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_normal_10"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_40"
+                    android:background="@drawable/edittext_design_white"
+                    android:padding="@dimen/dimen_normal_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:text="@string/data"
+                        android:textSize="@dimen/dimen_text_16"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end">
+
+                        <ImageView
+                            android:id="@+id/arrowUpDataBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_keyboard_arrow_up_24dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/arrowDownDataBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_keyboard_arrow_down_24dp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/dataLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/cardNumEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:layout_marginTop="@dimen/dimen_normal_5"
+                        android:hint="@string/card_number"
+                        android:padding="@dimen/dimen_normal_5" />
+
+                    <EditText
+                        android:id="@+id/SubDateEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:layout_marginTop="@dimen/dimen_normal_5"
+                        android:hint="@string/date_of_subscription"
+                        android:padding="@dimen/dimen_normal_5" />
+
+
+                    <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/dimen_normal_40"-->
+                    <!--android:layout_marginTop="@dimen/dimen_normal_5"-->
+                    <!--android:padding="@dimen/dimen_normal_5">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/SubDateTv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="start|center_vertical"-->
+                    <!--android:text="Date of Subscription"-->
+                    <!--android:textSize="@dimen/dimen_text_18"-->
+                    <!--android:textStyle="bold" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/subDateBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="end|center_vertical"-->
+                    <!--android:src="@drawable/ic_today_24dp" />-->
+                    <!--</FrameLayout>-->
+
+                    <EditText
+                        android:id="@+id/expireSubEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:hint="@string/expire_subscription"
+                        android:padding="@dimen/dimen_normal_5" />
+
+                    <EditText
+                        android:id="@+id/paumentSystemEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_normal_40"
+                        android:hint="@string/payment_system"
+                        android:padding="@dimen/dimen_normal_5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_normal_1">1dp</dimen>
+    <dimen name="dimen_normal_2">2dp</dimen>
+    <dimen name="dimen_normal_5">5dp</dimen>
+    <dimen name="dimen_normal_6">6dp</dimen>
+    <dimen name="dimen_normal_8">8dp</dimen>
+    <dimen name="dimen_normal_10">10dp</dimen>
+    <dimen name="dimen_normal_14">14dp</dimen>
+    <dimen name="dimen_normal_15">15dp</dimen>
+    <dimen name="dimen_normal_16">16dp</dimen>
+    <dimen name="dimen_normal_16_sp">16sp</dimen>
+    <dimen name="dimen_normal_20">20dp</dimen>
+    <dimen name="dimen_normal_24">24dp</dimen>
+    <dimen name="dimen_normal_40">40dp</dimen>
+    <dimen name="dimen_normal_48">48dp</dimen>
+    <dimen name="dimen_normal_50">50dp</dimen>
+    <dimen name="dimen_normal_100">100dp</dimen>
+    <dimen name="dimen_normal_30">30dp</dimen>
+    <dimen name="dimen_normal_60">60dp</dimen>
+    <dimen name="dimen_normal_12">12dp</dimen>
+    <dimen name="dimen_normal_200">200dp</dimen>
+    <dimen name="dimen_normal_130">130dp</dimen>
+    <dimen name="dimen_normal_18">18dp</dimen>
+    <dimen name="dimen_normal_150">150dp</dimen>
+    <dimen name="dimen_normal_400">400dp</dimen>
+    <dimen name="dimen_normal_11">11dp</dimen>
+    <dimen name="dimen_normal_70">70dp</dimen>
+    <dimen name="dimen_normal_80">80dp</dimen>
+    <dimen name="dimen_normal_85">80dp</dimen>
+    <dimen name="dimen_normal_160">160dp</dimen>
+    <dimen name="dimen_normal_120">120dp</dimen>
+    <dimen name="dimen_normal_180">180dp</dimen>
+    <dimen name="dimen_normal_250">250dp</dimen>
+    <dimen name="dimen_normal_300">300dp</dimen>
+    <dimen name="dimen_normal_25">25dp</dimen>
+    <dimen name="dimen_normal_3">3dp</dimen>
+    <dimen name="dimen_normal_35">35dp</dimen>
+    <dimen name="dimen_normal_45">45dp</dimen>
+
+
+    <!--text dimens-->
+    <dimen name="dimen_text_8">8sp</dimen>
+    <dimen name="dimen_text_10">10sp</dimen>
+    <dimen name="dimen_text_12">12sp</dimen>
+    <dimen name="dimen_text_14">14sp</dimen>
+    <dimen name="dimen_text_16">16sp</dimen>
+    <dimen name="dimen_text_18">18sp</dimen>
+    <dimen name="dimen_text_45">45sp</dimen>
+
+
+
+
+    <!-- Multiple windows -->
+    <dimen name="app_defaultsize_w">632.0dip</dimen>
+
+    <dimen name="app_defaultsize_h">598.0dip</dimen>
+
+    <dimen name="app_minimumsize_w">632.0dip</dimen>
+
+    <dimen name="app_minimumsize_h">598.0dip</dimen>
+    <dimen name="dimen_normal_90">90dp</dimen>
+    <dimen name="dimen_normal_2_moin">-2dp</dimen>
+    <dimen name="dimen_normal_5_moin">-5dp</dimen>
+    <dimen name="dimen_normal_50_moin">-50dp</dimen>
+    <dimen name="dimen_normal_220">220dp</dimen>
+</resources>

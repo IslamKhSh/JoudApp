@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_normal_5"
+    android:background="@android:color/white"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vouchersOrStoresBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_normal_40"
+        android:background="@drawable/edittext_design_white"
+        android:padding="@dimen/dimen_normal_5">
+
+        <TextView
+            android:id="@+id/storesOrVouchersTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:textSize="@dimen/dimen_text_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

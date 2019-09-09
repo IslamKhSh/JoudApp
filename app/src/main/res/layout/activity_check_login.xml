@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Activity.CheckLoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="@dimen/dimen_normal_30"
+            android:layout_marginEnd="@dimen/dimen_normal_30"
+            android:background="@color/customWhite"
+            android:elevation="@dimen/dimen_normal_3"
+            app:cardCornerRadius="@dimen/dimen_normal_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_normal_30"
+                android:layout_marginTop="@dimen/dimen_normal_40"
+                android:layout_marginEnd="@dimen/dimen_normal_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_normal_200"
+                    android:layout_height="@dimen/dimen_normal_150"
+                    android:src="@drawable/logo" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_45"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:background="@drawable/button_design"
+                    android:padding="@dimen/dimen_normal_5"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/customWhite"
+                    android:textSize="@dimen/dimen_text_16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_normal_45"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:background="@drawable/button_design_yellow"
+                    android:padding="@dimen/dimen_normal_5"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/customWhite"
+                    android:textSize="@dimen/dimen_text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/visitorLoginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_normal_10"
+                    android:layout_marginBottom="@dimen/dimen_normal_90"
+                    android:text="@string/login_as_visitor"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</LinearLayout>

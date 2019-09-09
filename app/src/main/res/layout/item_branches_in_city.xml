@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/branchTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:padding="@dimen/dimen_normal_5"
+        android:background="@drawable/edittext_design_white"
+        android:text="Misr Elgadidah: 1 Sabie Street"
+        android:textSize="@dimen/dimen_text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_normal_1"
+        android:layout_marginTop="@dimen/dimen_normal_5"
+        android:background="@color/hintGray" />
+</LinearLayout>
