@@ -260,11 +260,11 @@ public class EditAccountActivity extends AppCompatActivity {
     }
 
     private void showFileChooser() {
-        Intent intent = new Intent();
+        Intent intent =  new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(intent, "Select an image"), PICK_IMAGE_REQUEST);
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -274,7 +274,10 @@ public class EditAccountActivity extends AppCompatActivity {
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
                 profileIv.setImageBitmap(bitmap);
-
+                 } catch (IOException e) {
+                e.printStackTrace();
+                }
+            
                 String selectedMediaPath;
 
                 Cursor cursor = getContentResolver().query(filePath, null,null, null, null);
@@ -286,7 +289,8 @@ public class EditAccountActivity extends AppCompatActivity {
                     int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
                     selectedMediaPath = cursor.getString(idx);
                 }
-                cursor.close();
+                if (cursor != null )
+                    cursor.close();
 
                  userPhotoFile = new File(selectedMediaPath);
 //                RequestBody userFileRequest = RequestBody.create(MediaType.parse(guessContentTypeFromName(userPhotoFile.getName())), userPhotoFile);
@@ -298,9 +302,7 @@ public class EditAccountActivity extends AppCompatActivity {
 //                    mediaPart = MultipartBody.Part.createFormData("image", "not_supported_file_name", userFileRequest);
 //                }
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+          
         }
     }
 
